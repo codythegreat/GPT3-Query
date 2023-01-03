@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "GPT3 Query",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "description": "Allows you to highlight and ask questions to GPT3 on parts of web pages.",
+
+  "icons": {
+    "48": "icons/robot-head.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["gpt3Query.js"],
+      "css": ["style.css"]
+    }
+  ]
+
+}
