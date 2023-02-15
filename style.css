@@ -18,7 +18,7 @@
   align-items: center;
   background-color: #444;
   color: white;
-  padding: 8px;
+  padding: 0 0 0 8px;
 }
 
 #cwm-openai-div-header-div button {
@@ -26,11 +26,12 @@
   background-color: transparent;
   border: none;
   color: white;
+  padding: 8px;
 }
 
-/* #cwm-openai-div-input-div {
-
-} */
+#cwm-openai-div-header-div button:hover {
+  background-color: #f44;
+}
 
 #cwm-openai-prompt {
   min-width: 440px;
@@ -71,9 +72,14 @@
   appearance: none;
 }
 
+#openai-response-clear {
+  margin-left: 5px;
+}
+
 #openai-response-clear, #openai-response-copy {
   margin-right: 5px;
 }
+
 #openai-response-clear, #openai-response-copy, #openai-response-use-in-input {
   cursor: pointer;
   display: none;
